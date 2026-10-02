@@ -59,4 +59,6 @@ Residual risk after the rebuild:
 - Prove guardrails instead of measuring attacks: an attack success rate mostly measures the prompt. A test that blocks a tool call directly holds no matter how the model was talked into it.
 
 ## What I Would Do Differently
-Still open.
+- **Security by design:** The threat model belongs at the start, before the agent gets tools that move money. In UC7 the demo was already live when the account gap came to light. Tests before go-live are the second check, not the first.
+- **Define success before measuring:** Decide which column counts (pass^1 or pass^3, which criteria) and check one run by hand to see whether the number measures what you think it does. "45/45" only meant "run finished"; the real number was 39/45.
+- **Prove the guardrails first, then attack, and iterate between the two:** Deterministic tests show that a call is blocked, regardless of the model. Red-teaming complements them and finds gaps nobody thought of while building.
