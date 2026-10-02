@@ -59,4 +59,6 @@ Restrisiko nach dem Umbau:
 - Schutz beweisen statt Angriffe messen: Eine Angriffs-Erfolgsquote misst vor allem den Prompt. Ein Test, der einen Werkzeugaufruf direkt blockiert, gilt unabhängig davon, wie das Modell überredet wurde.
 
 ## Was ich anders machen würde
-Noch offen.
+- **Security by design:** Das Bedrohungsmodell gehört an den Anfang, bevor der Agent Werkzeuge bekommt, die Geld bewegen. In UC7 war die Demo schon live, als die Konto-Lücke auffiel. Tests vor dem Go-live sind die zweite Kontrolle, nicht die erste.
+- **Erfolg definieren, bevor gemessen wird:** Festlegen, welche Spalte zählt (pass^1 oder pass^3, welche Kriterien), und an einem Lauf von Hand prüfen, ob die Zahl misst, was man glaubt. „45/45“ hieß nur „Lauf beendet“, die echte Zahl war 39/45.
+- **Erst Schutz beweisen, dann angreifen, und zwischen beidem iterieren:** Deterministische Tests zeigen, dass ein Aufruf blockiert wird, unabhängig vom Modell. Red-Teaming ergänzt sie und findet Lücken, an die beim Bau niemand gedacht hat.
