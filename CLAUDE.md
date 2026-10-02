@@ -13,8 +13,11 @@ Schutzschicht hält wirklich, wo steht nur eine? Grundlage: docs/BEDROHUNGSMODEL
 - Tests laufen lokal gegen den UC7-Code (eigene Daten- und Artikelordner über den Werkzeugkasten), nie gegen die
   Live-URL: Das verbraucht den Monatsdeckel der Demo und verfälscht die Statistik der Konsole.
 - API-Aufrufe erst nach Freigabe mit Kostenschätzung.
-- Jede Angriffskategorie hat gleich viele harmlose Kontrollfälle. Eine Verteidigung zählt nur, wenn die
-  Angriffs-Erfolgsquote sinkt und die Kontroll-Quote bleibt.
+- Scope ist das echte Produkt: Angreifer ist ein eingeloggter Kunde oder wer Text in gelesene Daten bringt.
+  Demo-Spezifisches steht getrennt (docs/BEDROHUNGSMODELL.md, Abschnitt 8).
+- Keine Angriffstexte schreiben (Entscheidung 02.10.2026). Schutz wird im UC7-Code gebaut und mit deterministischen
+  Tests ohne API belegt. Greift ein Sicherheitsfilter: nicht umformulieren, stoppen und melden.
+- Nutzen nach jedem Umbau mit dem UC4-Goldset prüfen. Keine harmlose Anfrage darf neu blockiert werden.
 - docs/ in einfacher Sprache (zum Lernen).
 
 ## Erwartete Artefakte

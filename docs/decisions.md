@@ -66,3 +66,53 @@ Werkzeugkasten nimmt eigene Ordner für Daten und Hilfeartikel an.
 
 Offen: UC5 hat seine Angriffsdemo mit dem Modell nach UC6 verschoben (UC5, docs/decisions.md, 30.09.2026). Ob UC6
 auch den Text-to-SQL-Copiloten angreift, entscheide ich nach den UC7-Messungen.
+
+## 2026-10-02: Scope ist das echte Produkt, nicht die Portfolio-Demo
+
+Kontext: Die erste Fassung des Bedrohungsmodells mischte Produkt und Demo. Demo-Themen (Besucher mit Link, Bots,
+Besucher als Freigeber) standen gleichberechtigt in der Matrix und verschoben die Prioritäten.
+
+Entscheidung: UC6 betrachtet das echte FocusFlow-Produkt. Angreifer ist ein eingeloggter Kunde (Absender durch den Login
+fest) oder jemand, der Text in Daten platzieren kann, die der Agent liest. Demo-Spezifisches (Kundenauswahl im
+Formular, persönliche Links, Bots und Denial of Wallet über die Demo, Besucher als Freigeber in der Konsole, Rohdaten
+in der Zeitleiste) steht in einem eigenen Abschnitt „Demo-spezifisch, bewusst ausgeklammert“ und zählt nicht in die
+Matrix. B12 (verfälschte Schattenmodus-Daten) ist ganz dorthin gewandert. B7 heißt im Produkt nur noch „ein Ticket wird
+teuer“. B10 (vergiftete Daten) steigt auf Priorität 2, weil im Produkt Kunden Teile ihrer Daten selbst bestimmen.
+
+Begründung: Verteidigungen sollen das Produkt sicherer machen. Eine Matrix, die von Demo-Eigenheiten geprägt ist,
+würde die falschen Lücken zuerst schließen.
+
+## 2026-10-02: Abbruch durch einen Sicherheitsfilter beim Ausformulieren der Angriffe
+
+Was passiert ist: Beim Ausformulieren der Testfälle für Branch (b), also der konkreten Angriffstexte für die
+Kategorien K1 bis K3, hat ein Sicherheitsfilter die Antwort abgebrochen. Vorgabe war, in diesem Fall nicht
+umzuformulieren, sondern zu stoppen und zu melden. So ist es geschehen. Danach war nichts geschrieben: keine Datei,
+kein Commit, keine `.env`, kein API-Aufruf, keine Kosten. UC7 war unverändert.
+
+Folge: siehe nächster Eintrag.
+
+## 2026-10-02: Von „Angriffe messen“ zu „Schutz im Code beweisen“
+
+Kontext: Geplant war, Angriffe auszuformulieren (K1 bis K3, je 8/8, 8/8, 6/6 mit Kontrollfällen, 3 Läufe je Fall) und
+die Angriffs-Erfolgsquote zu messen. Das scheitert am Sicherheitsfilter. Es wäre auch inhaltlich die schwächere Frage:
+Eine Erfolgsquote misst vor allem, wie gut der Prompt hält, also genau die Schicht, auf die wir uns nicht mehr
+verlassen wollen.
+
+Optionen: (a) Angriffstexte umformulieren, bis der Filter nicht mehr greift, (b) fertige Angriffssammlungen von
+außen übernehmen, (c) keine Angriffstexte, stattdessen die Lücken im Code schließen und deterministisch belegen.
+
+Entscheidung: (c). UC6 schreibt keine Angriffstexte. Die Lücken aus der Matrix werden im UC7-Code geschlossen
+(Konto-Bindung per Hook, Erstattungsregeln im Werkzeug, Prüfung von Entwürfen ohne Empfehlung, Konsole gegen
+Automation Bias). Jede Lücke bekommt mindestens einen Test ohne API, der Werkzeug oder Hook direkt mit dem Aufruf
+aufruft, den ein erfolgreicher Angriff erzeugen würde: vorher wäre er durchgekommen, jetzt wird er blockiert. Der
+Nutzen wird mit dem UC4-Goldset (15 Tickets) nach dem Umbau geprüft. Keine harmlose Anfrage darf neu blockiert werden.
+
+Begründung: (a) widerspricht der Vorgabe und dem Zweck des Filters. (b) bringt fremde Texte ins Repo, deren Inhalt ich
+nicht verantworte, und misst weiter den Prompt. (c) beweist Schutz, der nicht vom Modell abhängt: Egal, wie ein
+Angreifer das Modell überredet, der Aufruf mit fremder `kunden_id` oder eine regelwidrige Empfehlung kommt nicht durch.
+Die Tests sind reproduzierbar und kosten nichts. Preis: Wie oft das Modell auf Angriffe hereinfällt, wissen wir nicht.
+Für Lücken, die der Code nicht schließen kann (Ton, zweite Ordnung im Antwort-Modell, Text aus vergifteten Daten),
+bleibt das Restrisiko und wird in der Matrix so benannt.
+
+Damit überholt: die Testkategorien K1 bis K5 und die Erfolgsdefinitionen aus der ersten Fassung des
+Bedrohungsmodells. Weiter gültig: Tests laufen lokal gegen den UC7-Code, nicht gegen die Live-Demo.
