@@ -35,6 +35,8 @@ Stand 02.10.2026, UC7 PR #11 (noch nicht deployt). Details: [evals/results.md](e
 | UC4-Goldset, Erfolg je Lauf (Judge j2) | 39 von 45 | 34 von 45 |
 | UC4-Goldset, pass^3 | 11 von 15 | 10 von 15 |
 
+34 von 45 wurde **vor dem T14-Fix** gemessen (UC7 `945d475`). Der Fix (eigene E-Mail statt Kunden-ID bekommt einen Hinweis statt einer Blockade, alles andere ohne Kunden-ID bleibt blockiert) ist deterministisch getestet, Fälle K8a–K8h; das Goldset ist danach nicht neu gelaufen.
+
 **Schutz kostet 1 Lauf (Fehlalarm, behoben), 1 Lauf ist ein echter Fund, Rest nicht durch den Schutz verursacht.** Der Fehlalarm (eigene E-Mail als Kunden-ID, T14) ist behoben. Der echte Fund: Der Agent wollte in T15 Annas Zahlungen lesen. T04 scheitert in einer Gegenprobe auch mit dem alten Code, T13 ist Streuung bei identischem Input.
 
 Restrisiko nach dem Umbau:

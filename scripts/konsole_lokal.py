@@ -119,7 +119,10 @@ def main() -> None:
     if a.screenshots:
         import threading, time
         threading.Thread(target=server.run, daemon=True).start()
+        ende = time.time() + 10
         while not server.started:
+            if time.time() > ende:
+                sys.exit(f"Server startet nicht auf Port {a.port} (belegt? anderen Port mit --port wählen).")
             time.sleep(0.05)
         ziel = Path(a.screenshots).resolve(); ziel.mkdir(parents=True, exist_ok=True)
         for name, html in seiten.items():

@@ -35,6 +35,8 @@ As of Oct 2, 2026, UC7 PR #11 (not deployed yet). Details: [evals/results.md](ev
 | UC4 gold set, success per run (judge j2) | 39 of 45 | 34 of 45 |
 | UC4 gold set, pass^3 | 11 of 15 | 10 of 15 |
 
+34 of 45 was measured **before the T14 fix** (UC7 `945d475`). The fix (the sender's own email used as customer ID gets a hint instead of a block; everything else without a customer ID stays blocked) is covered by deterministic tests, cases K8a–K8h; the gold set has not been re-run since.
+
 **The guardrails cost 1 run (false alarm, fixed), 1 run is a real catch, the rest is not caused by the guardrails.** The false alarm (own email used as customer ID, T14) is fixed. The real catch: in T15 the agent tried to read Anna's payments. T04 also fails with the old code in a counter-test; T13 is sampling variance with identical input.
 
 Residual risk after the rebuild:
