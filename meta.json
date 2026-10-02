@@ -1,7 +1,14 @@
 {
-  "title": "",
-  "status": "planned",
-  "tags": [],
-  "summary": "",
+  "title": "Prompt Injection & Guardrails: Attacking the Support Agent",
+  "status": "active",
+  "tags": [
+    "prompt-injection",
+    "security",
+    "guardrails",
+    "threat-model",
+    "agents",
+    "evals"
+  ],
+  "summary": "A threat model and attack tests against the live UC7 support agent, showing which guardrail actually stops which attack.",
   "metrics": []
 }

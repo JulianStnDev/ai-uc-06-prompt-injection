@@ -1,7 +1,21 @@
 # Projekt-Kontext
 
 ## Problem
-[Wird hier näher beschrieben, sobald das Use-Case-Repo konkret wird]
+Prompt Injection & Guardrails am live laufenden Support-Agent aus UC7 (`../ai-uc-07-deployment`,
+https://github.com/JulianStnDev/ai-uc-07-deployment). Frage: Was kann ein Angreifer mit Text erreichen, welche
+Schutzschicht hält wirklich, wo steht nur eine? Grundlage: docs/BEDROHUNGSMODELL.md.
+
+## Regeln für UC6
+- Aus diesem Repo heraus nie Dateien in UC7 ändern. Verteidigungen kommen als eigene PRs ins UC7-Repo,
+  Messungen und Ergebnisse hierher.
+- Jede Messung nennt den UC7-Commit, gegen den sie lief. Fundstellen im Code als Permalink auf diesen Commit,
+  aus dem Code gelesen, nicht geraten.
+- Tests laufen lokal gegen den UC7-Code (eigene Daten- und Artikelordner über den Werkzeugkasten), nie gegen die
+  Live-URL: Das verbraucht den Monatsdeckel der Demo und verfälscht die Statistik der Konsole.
+- API-Aufrufe erst nach Freigabe mit Kostenschätzung.
+- Jede Angriffskategorie hat gleich viele harmlose Kontrollfälle. Eine Verteidigung zählt nur, wenn die
+  Angriffs-Erfolgsquote sinkt und die Kontroll-Quote bleibt.
+- docs/ in einfacher Sprache (zum Lernen).
 
 ## Erwartete Artefakte
 - README.md nach Schema (Problem, PM-Entscheidung, Architektur, Eval, Kosten/Latenz, Learnings)
@@ -13,7 +27,7 @@
 
 ## Erlaubte Libraries
 - Direkt gegen das SDK, kein LangChain/LlamaIndex
-- [ggf. weitere Einschränkungen pro Use Case]
+- Claude Agent SDK und Anthropic SDK wie in UC7, sonst nur Standardbibliothek und pytest
 
 ## Stil
 - Python, einfache Skripte statt Frameworks
