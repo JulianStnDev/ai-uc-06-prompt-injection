@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf verweigert die Erstattung mit der Begründung, die 14-Tage-Frist sei bereits abgelaufen – das widerspricht direkt der Soll-Kernaussage, dass die Frist ab Beginn des neuen Jahreszeitraums (15.09.2026) noch läuft und die Verlängerung erstattet wird.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Die Behauptung, die 14-Tage-Frist sei bereits verstrichen, ist eine falsche, nicht durch die Trajektorie gedeckte Aussage, da laut Kernaussage die Frist noch läuft; zudem wird das Datum der Verlängerungszahlung (2026-09-15) nicht korrekt genannt, sondern nur vage 'am 15. September'.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 4985,
+  "judge_output_tokens": 992,
+  "judge_kosten_usd": 0.01989,
+  "judge_s": 10.47
+}

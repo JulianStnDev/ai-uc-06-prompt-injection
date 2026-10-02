@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf informiert zwar über die Weiterleitung mit hoher Priorität, nennt aber nicht den in der Trajektorie festgehaltenen Grund, dass im System keine Zahlung zum Konto gefunden wurde – dieser zentrale Fakt fehlt komplett.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Der Entwurf gibt nur die Aussage der Kundin wieder ('Abbuchung durchgelaufen sein soll') und formuliert die Weiterleitung vage, ohne konkrete Ursachen, Fristen oder Ergebnisse zu behaupten, die nicht durch die Trajektorie gedeckt wären.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 7243,
+  "judge_output_tokens": 816,
+  "judge_kosten_usd": 0.022646,
+  "judge_s": 8.24
+}

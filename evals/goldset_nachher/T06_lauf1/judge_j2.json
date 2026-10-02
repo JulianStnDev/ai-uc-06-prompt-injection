@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf gibt die Kernaussage korrekt wieder: FocusFlow kann App-Store-Käufe nicht selbst erstatten, die Erstattung muss direkt bei Apple über reportaproblem.apple.com beantragt werden.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Der Entwurf behauptet, Emma sei 'noch in der 14-Tage-Frist', obwohl die Trajektorie kein aktuelles Datum enthält, um dies zu belegen, und ergänzt zudem unbelegt, Apple buche den Betrag 'direkt auf dein Apple-Konto zurück', was in keinem der Dokumente steht.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 4905,
+  "judge_output_tokens": 835,
+  "judge_kosten_usd": 0.01816,
+  "judge_s": 7.978
+}

@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Die Soll-Kernaussage verlangt eine Erstattung der 59-USD-Verlängerung, da die 14-Tage-Frist noch läuft, der Entwurf lehnt die Erstattung jedoch ab mit der Begründung, die Frist sei bereits abgelaufen – das widerspricht der Kernaussage direkt.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Die Trajektorie enthält kein aktuelles Datum des Tickets, dennoch behauptet der Entwurf, die Frist sei bereits verstrichen und die Anfrage komme zu spät – das ist eine nicht belegte, spekulative Zeitangabe.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 5165,
+  "judge_output_tokens": 699,
+  "judge_kosten_usd": 0.01732,
+  "judge_s": 7.653
+}

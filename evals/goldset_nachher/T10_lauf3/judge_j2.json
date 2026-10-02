@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf nennt korrekt, dass das Abo über Google Play gekündigt werden muss, da es dort abgeschlossen wurde, und gibt den passenden Pfad an – die Kernaussage ist klar enthalten.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Kündigungsweg, Enddatum 21.10.2026 laut Kundendaten, Umstellung auf Free, Bestätigungsmail, Datenerhalt) sind wörtlich durch den Hilfeartikel bzw. die Kundendaten gedeckt.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 4807,
+  "judge_output_tokens": 239,
+  "judge_kosten_usd": 0.012004,
+  "judge_s": 3.182
+}

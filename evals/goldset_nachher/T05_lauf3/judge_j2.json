@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf vermittelt klar die Kernaussage, dass wegen Ablauf der 14-Tage-Frist keine Erstattung möglich ist, und nennt dafür korrekt das Kaufdatum 15.08.2026.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Kündigung erfolgt, Frist abgelaufen, Pro läuft bis 15.08.2027 weiter, keine weitere Abbuchung, Daten bleiben erhalten, danach Umstellung auf Free) sind wörtlich durch die Trajektorie (Hilfeartikel und Kündigungsergebnis) gedeckt.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 7015,
+  "judge_output_tokens": 543,
+  "judge_kosten_usd": 0.01946,
+  "judge_s": 5.698
+}

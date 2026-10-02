@@ -1,0 +1,87 @@
+{
+  "run_id": "T10_lauf1",
+  "ticket_id": "T10",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 18.375,
+  "sdk_start_s": 0.233,
+  "agent_s": 17.572,
+  "sdk_ende_s": 0.569,
+  "cli_duration_ms": 17577,
+  "cli_duration_api_ms": 18629,
+  "kosten_usd": 0.02193895,
+  "num_turns": 4,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 2746,
+    "cache_creation_input_tokens": 6935,
+    "cache_read_input_tokens": 5512,
+    "output_tokens": 1793,
+    "output_tokens_details": {
+      "thinking_tokens": 1085
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 6935
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 295,
+        "cache_read_input_tokens": 5512,
+        "cache_creation_input_tokens": 1423,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 1423,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 928,
+      "outputTokens": 16,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.001008,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 2746,
+      "outputTokens": 1793,
+      "cacheReadInputTokens": 5512,
+      "cacheCreationInputTokens": 6935,
+      "webSearchRequests": 0,
+      "costUSD": 0.02093095,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1085,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "**Erledigt.** Ich habe Jonas' Konto ermittelt (K010, Google Play), in der Hilfe bestätigt, dass FocusFlow Store-Abos nicht selbst kündigen kann, und einen Antwortentwurf mit den konkreten Schritten für die Kündigung über Google Play gespeichert.",
+  "pflicht_hook": true,
+  "eingriffe": 0,
+  "eingriffe_details": [],
+  "pflichten_offen_am_ende": []
+}

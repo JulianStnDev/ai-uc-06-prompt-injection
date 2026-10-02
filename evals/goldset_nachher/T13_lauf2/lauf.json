@@ -1,0 +1,87 @@
+{
+  "run_id": "T13_lauf2",
+  "ticket_id": "T13",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 27.61,
+  "sdk_start_s": 0.231,
+  "agent_s": 26.528,
+  "sdk_ende_s": 0.851,
+  "cli_duration_ms": 26533,
+  "cli_duration_api_ms": 27075,
+  "kosten_usd": 0.030359699999999996,
+  "num_turns": 6,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 2799,
+    "cache_creation_input_tokens": 9442,
+    "cache_read_input_tokens": 14552,
+    "output_tokens": 2644,
+    "output_tokens_details": {
+      "thinking_tokens": 1555
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 9442
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 361,
+        "cache_read_input_tokens": 7622,
+        "cache_creation_input_tokens": 1820,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 1820,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 973,
+      "outputTokens": 22,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.001083,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 2799,
+      "outputTokens": 2644,
+      "cacheReadInputTokens": 14552,
+      "cacheCreationInputTokens": 9442,
+      "webSearchRequests": 0,
+      "costUSD": 0.029276699999999996,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1555,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "**Zusammenfassung:** Ich habe Hannahs Kundenkonten (K009) überprüft und bestätigt, dass das Pro-Abo nicht aktiviert ist, obwohl sie von einer Abbuchung spricht. Dies deutet auf einen technischen Fehler beim iOS-Abo hin. Das Anliegen wurde mit hoher Priorität an den Support eskaliert (Übergabe U-T13_lauf2-4), und ein entschuldigender Antwortenwurf wurde gespeichert.",
+  "pflicht_hook": true,
+  "eingriffe": 0,
+  "eingriffe_details": [],
+  "pflichten_offen_am_ende": []
+}

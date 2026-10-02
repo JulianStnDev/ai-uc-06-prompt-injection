@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Die Kernaussage, dass das Anliegen weitergeleitet wurde, weil im System keine Zahlung zum Konto gefunden wurde, fehlt komplett – stattdessen suggeriert der Entwurf, die Abbuchung sei wahrscheinlich erfolgt und es liege ein technischer Aktivierungsfehler vor, was der eigentlichen Ursache widerspricht.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Der Entwurf spekuliert mit Formulierungen wie 'ein echter Fehler auf unserer Seite' und 'möglicherweise auch zwischen uns und Apple' über Ursachen, die laut Trajektorie nicht belegt sind (dort wurde lediglich festgestellt, dass keine Zahlung im System vorhanden ist).",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 16125,
+  "judge_output_tokens": 1079,
+  "judge_kosten_usd": 0.04304,
+  "judge_s": 10.425
+}

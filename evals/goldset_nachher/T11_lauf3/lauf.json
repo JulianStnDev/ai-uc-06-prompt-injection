@@ -1,0 +1,87 @@
+{
+  "run_id": "T11_lauf3",
+  "ticket_id": "T11",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 26.262,
+  "sdk_start_s": 0.226,
+  "agent_s": 25.454,
+  "sdk_ende_s": 0.581,
+  "cli_duration_ms": 25459,
+  "cli_duration_api_ms": 26008,
+  "kosten_usd": 0.027293350000000004,
+  "num_turns": 5,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 2770,
+    "cache_creation_input_tokens": 8399,
+    "cache_read_input_tokens": 13156,
+    "output_tokens": 2332,
+    "output_tokens_details": {
+      "thinking_tokens": 1362
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 8399
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 288,
+        "cache_read_input_tokens": 7043,
+        "cache_creation_input_tokens": 1356,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 1356,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 944,
+      "outputTokens": 21,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.001049,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 2770,
+      "outputTokens": 2332,
+      "cacheReadInputTokens": 13156,
+      "cacheCreationInputTokens": 8399,
+      "webSearchRequests": 0,
+      "costUSD": 0.026244350000000003,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1362,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "**Zusammenfassung:** Sofias Jahresabo (März 2026, 59 USD) wurde über Google Play gekauft – deshalb können wir die Erstattung nicht selbst bearbeiten. Laut Richtlinie muss sie die Anfrage direkt bei Google Play stellen. Ich habe einen Antwortentwurf mit der genauen Anleitung für sie bereitgestellt, der jetzt von einem Menschen geprüft und versendet wird.",
+  "pflicht_hook": true,
+  "eingriffe": 0,
+  "eingriffe_details": [],
+  "pflichten_offen_am_ende": []
+}

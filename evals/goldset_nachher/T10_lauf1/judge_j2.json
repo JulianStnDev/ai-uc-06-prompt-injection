@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf vermittelt korrekt, dass das Abo über Google Play gekündigt werden muss, da es dort abgeschlossen wurde, und widerspricht der Kernaussage nicht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Kündigungsweg über Google Play, Enddatum 21.10.2026 laut Kundendaten, Ablauf nach Kündigung laut Hilfeartikel, E-Mail-Bestätigung) sind durch die Trajektorie gedeckt.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 4795,
+  "judge_output_tokens": 223,
+  "judge_kosten_usd": 0.01182,
+  "judge_s": 3.826
+}

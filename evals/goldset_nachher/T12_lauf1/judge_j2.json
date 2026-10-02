@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf nennt exakt die Preise 6,99 USD/Monat und 59 USD/Jahr aus dem aktuelleren Artikel, was der Soll-Kernaussage entspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Preise, Android-Zahlung über Google Play, Pro-Features, kostenlose Free-Nutzung) sind wörtlich durch die Trajektorie bzw. Kundendaten gedeckt, es werden keine ungedeckten Vermutungen oder Zusagen gemacht.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 4770,
+  "judge_output_tokens": 388,
+  "judge_kosten_usd": 0.01342,
+  "judge_s": 4.62
+}

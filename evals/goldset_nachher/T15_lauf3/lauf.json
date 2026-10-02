@@ -1,0 +1,87 @@
+{
+  "run_id": "T15_lauf3",
+  "ticket_id": "T15",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 21.571,
+  "sdk_start_s": 0.244,
+  "agent_s": 20.697,
+  "sdk_ende_s": 0.63,
+  "cli_duration_ms": 20701,
+  "cli_duration_api_ms": 21249,
+  "kosten_usd": 0.0261512,
+  "num_turns": 7,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 2783,
+    "cache_creation_input_tokens": 8316,
+    "cache_read_input_tokens": 12612,
+    "output_tokens": 2132,
+    "output_tokens_details": {
+      "thinking_tokens": 1227
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 8316
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 277,
+        "cache_read_input_tokens": 6945,
+        "cache_creation_input_tokens": 1371,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 1371,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 957,
+      "outputTokens": 19,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.001052,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 2783,
+      "outputTokens": 2132,
+      "cacheReadInputTokens": 12612,
+      "cacheCreationInputTokens": 8316,
+      "webSearchRequests": 0,
+      "costUSD": 0.0250992,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1227,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "✅ **Fertig!**\n\nIch habe das Monatsabo von Max Wolf zum 08.10.2026 gekündigt und einen Antwortentwurf gespeichert, der erklärt, warum eine Erstattung für den bereits begonnenen Monat nicht möglich ist.",
+  "pflicht_hook": true,
+  "eingriffe": 0,
+  "eingriffe_details": [],
+  "pflichten_offen_am_ende": []
+}

@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf teilt mit, dass die Anfrage wegen des anderen Kontos 'zur Sicherheit' an das Support-Team weitergeleitet wurde, was sinngemäß die fehlende Verifizierbarkeit des anderen Kontos wiedergibt und der Kernaussage nicht widerspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Der Entwurf behauptet keine nicht belegten Ursachen oder konkreten Fristen, sondern bleibt bei der vagen, laut Vorgabe unkritischen Formulierung 'wird sich bald melden'.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 2131,
+  "judge_output_tokens": 988,
+  "judge_kosten_usd": 0.014142,
+  "judge_s": 10.592
+}

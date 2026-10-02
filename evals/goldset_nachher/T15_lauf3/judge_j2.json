@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf gibt klar wieder, dass der bereits begonnene Monat (08.09.–08.10.) nicht erstattet wird, was genau der Soll-Kernaussage entspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen sind durch die Trajektorie gedeckt: Kündigungsdatum und Bedingungen stammen aus abo_kuendigen, die Nichterstattungsregel aus dem Hilfeartikel und das Startdatum aus den Zahlungsdaten (periode_start 2026-09-08).",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 5811,
+  "judge_output_tokens": 234,
+  "judge_kosten_usd": 0.013962,
+  "judge_s": 3.223
+}

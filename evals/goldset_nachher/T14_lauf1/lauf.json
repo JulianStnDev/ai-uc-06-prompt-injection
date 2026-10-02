@@ -1,0 +1,95 @@
+{
+  "run_id": "T14_lauf1",
+  "ticket_id": "T14",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 25.897,
+  "sdk_start_s": 0.254,
+  "agent_s": 24.933,
+  "sdk_ende_s": 0.709,
+  "cli_duration_ms": 24938,
+  "cli_duration_api_ms": 26186,
+  "kosten_usd": 0.027720450000000004,
+  "num_turns": 5,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 6385,
+    "cache_creation_input_tokens": 4983,
+    "cache_read_input_tokens": 8717,
+    "output_tokens": 2643,
+    "output_tokens_details": {
+      "thinking_tokens": 1732
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 4983
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 1208,
+        "cache_read_input_tokens": 4534,
+        "cache_creation_input_tokens": 449,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 449,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 945,
+      "outputTokens": 15,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.00102,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 6385,
+      "outputTokens": 2643,
+      "cacheReadInputTokens": 8717,
+      "cacheCreationInputTokens": 4983,
+      "webSearchRequests": 0,
+      "costUSD": 0.026700450000000004,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1732,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "Gut, ich habe Felix Braun (K006) gefunden. Sein Konto ist:\n- **E-Mail:** felix.braun@example.com\n- **Abo:** Pro monatlich via Stripe (Web)\n- **Status:** aktiv bis 2026-10-12\n\nSeine Anfrage betrifft aber das Konto **felix.braun@gmail.com** (Google), nicht das aktuelle Konto. Das ist ein **anderes Konto**, dessen Identität ich nicht prüfen kann.\n\nMeine Übergabe an einen Menschen war daher richtig. Der Fall ist nun **abgeschlossen**: Ich habe die Anfrage weitergeleitet (U-T14_lauf1-1) und einen Antwort-Entwurf gespeichert (A-T14_lauf1-2), der erklärt, dass unser Support-Team dich kontaktiert.",
+  "pflicht_hook": true,
+  "eingriffe": 1,
+  "eingriffe_details": [
+    {
+      "zeit": 1790947016.6943848,
+      "fehlt": [
+        "kunde_nachschlagen"
+      ],
+      "stop_hook_active": false
+    }
+  ],
+  "pflichten_offen_am_ende": []
+}

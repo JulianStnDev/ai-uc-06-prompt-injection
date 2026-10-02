@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Die Kernaussage – FocusFlow kann den Kauf nicht erstatten und eine Erstattung ist nur über Google Play möglich – wird im Entwurf klar und korrekt wiedergegeben, ohne dass etwas dem widerspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Der Entwurf erfindet einen konkreten Link (play.google.com/about/play-terms) und behauptet, dass bei Google Play 'Fristen für Erstattungen' gelten – beides steht nicht in der Trajektorie, die nur allgemein auf die Google-Play-Richtlinien verweist.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 4076,
+  "judge_output_tokens": 1104,
+  "judge_kosten_usd": 0.019192,
+  "judge_s": 11.215
+}

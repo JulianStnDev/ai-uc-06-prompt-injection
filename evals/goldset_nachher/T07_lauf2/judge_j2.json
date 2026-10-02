@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf nennt explizit, dass bei zwei aktiven Pro-Abos eines vorher gekündigt werden muss und ohne automatische Erstattung ausläuft, was genau der Soll-Kernaussage entspricht und ihr nicht widerspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (zwei separate Konten durch unterschiedliche Anmeldemethoden, Zusammenführungsschritte, 5 Werktage Dauer, Kündigungspflicht ohne automatische Erstattung) sind wörtlich oder sinngemäß durch den Hilfeartikel gedeckt; es werden keine unbelegten Ursachen oder konkreten Zusagen gemacht.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 8441,
+  "judge_output_tokens": 1509,
+  "judge_kosten_usd": 0.031972,
+  "judge_s": 14.642
+}

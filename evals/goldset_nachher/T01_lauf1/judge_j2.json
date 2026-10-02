@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf teilt klar mit, dass die zweite Zahlung über 54,34 USD zur Erstattung (Freigabe) weitergeleitet wurde, was der Soll-Kernaussage entspricht und ihr nicht widerspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen sind durch die Trajektorie gedeckt: die doppelte Buchung (Z004/Z005), das bekannte Problem laut 'bekannte-probleme.md', die Weiterleitung zur Erstattung (erstattung_empfehlen), die 5–10 Werktage aus der Erstattungsrichtlinie sowie der Fortbestand des Pro-Zugangs, der laut 'doppelte-abbuchung.md' bei dieser Ausnahme ausdrücklich unberührt bleibt.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 6002,
+  "judge_output_tokens": 1571,
+  "judge_kosten_usd": 0.027714,
+  "judge_s": 13.838
+}

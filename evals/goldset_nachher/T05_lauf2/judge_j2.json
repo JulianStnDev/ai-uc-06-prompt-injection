@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf teilt klar mit, dass eine Erstattung wegen abgelaufener 14-Tage-Frist nicht möglich ist, was exakt der Soll-Kernaussage entspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Kündigung erfolgt, Pro-Zugang bis 15.08.2027, keine weitere Abbuchung, 14-Tage-Frist abgelaufen, Free-Version nutzbar) sind direkt durch die Trajektorie (Kündigungsergebnis, Zahlungsdatum, Hilfeartikel) gedeckt.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 5201,
+  "judge_output_tokens": 433,
+  "judge_kosten_usd": 0.014732,
+  "judge_s": 5.698
+}
