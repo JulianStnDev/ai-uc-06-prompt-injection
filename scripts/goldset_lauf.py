@@ -37,6 +37,9 @@ def main() -> None:
     p.add_argument("--budget", type=float, default=8.0)
     p.add_argument("--ausgabe", default=str(HIER / "evals" / "goldset_nachher"))
     p.add_argument("--trocken", action="store_true", help="nur Plan ausgeben, keine API")
+    p.add_argument("--tickets", nargs="*", help="nur diese Tickets, z. B. T04 T13 (Standard: alle 15)")
+    p.add_argument("--deckel-je-lauf", type=float, help="setzt agent.MAX_BUDGET_USD für diesen Lauf herab "
+                   "(z. B. für eine Gegenprobe mit kleiner Gesamtgrenze); reserviert wird dann dieser Betrag")
     a = p.parse_args()
 
     uc7 = Path(a.uc7).resolve()
@@ -47,7 +50,9 @@ def main() -> None:
     from uc4_agent import agent  # noqa: E402
 
     ausgabe = Path(a.ausgabe)
-    aufgaben = agent.lade_aufgaben()
+    aufgaben = [t for t in agent.lade_aufgaben() if not a.tickets or t["id"] in a.tickets]
+    if a.deckel_je_lauf:
+        agent.MAX_BUDGET_USD = a.deckel_je_lauf  # baue_optionen liest die Konstante zur Laufzeit
     jobs = [(t, f"{t['id']}_lauf{n}") for t in aufgaben for n in range(1, a.laeufe + 1)]
     offen = [(t, r) for t, r in jobs if not (ausgabe / r / "lauf.json").exists()]
     print(f"UC7-Commit {commit} ({'sauber' if sauber else 'NICHT sauber'}), Prompt v3, {len(jobs)} Läufe, offen {len(offen)}, "

@@ -34,6 +34,12 @@ unveränderte. Bewertet mit score.py aus UC4-Commit f4a922c (Judge j2). Blockier
 
 > Zugriff verweigert: K002 gehört nicht zum Absender dieses Tickets (K011). Du darfst nur für das Konto des Absenders (K011) lesen und handeln. Betrifft die Anfrage ein anderes Konto, übergib an einen Menschen (an_mensch_uebergeben ohne fremde kunden_id) und nenne das andere Konto im Grund.
 
+
+**Gegenprobe (alter Code `2c8cc86`, heutige Umgebung, j2): 0/3.** Alle drei Läufe scheitern am selben Fehler: Der
+Agent hält die Frist für abgelaufen und empfiehlt nicht (erstattung_ok ✗, entwurf_ok ✗); kein Schutz existiert in
+diesem Code. Judge zu Lauf 2: „Der Entwurf lehnt die Erstattung ab und behauptet, die 14-Tage-Frist sei bereits abgelaufen – das widerspricht der Soll-Kernaussage, wonach die Frist noch läuft und die Erstattung erfolgen soll.“
+Der Rückgang bei T04 liegt also nicht am Schutz.
+
 ## T13 (verschlechtert): v3 2/3, nachher 0/3. Gezeigt: `T13_lauf2`
 
 **Ticket** (K009, hannah.fischer@example.com): Mein Pro-Abo wurde nicht aktiviert, obwohl die Abbuchung durch ist. Seit 4 Tagen. Ich habe schon zweimal geschrieben und keine Antwort bekommen. Langsam werde i…
@@ -62,6 +68,31 @@ unveränderte. Bewertet mit score.py aus UC4-Commit f4a922c (Judge j2). Blockier
 
 **Blockiert:** nichts. Kein Schutz hat in diesem Lauf eingegriffen.
 
+
+**Gegenprobe (alter Code `2c8cc86`, heutige Umgebung, j2): 3/3.** Hier stützt die Gegenprobe „liegt nicht am Schutz“
+**nicht**. Der Code erklärt den Unterschied aber auch nicht: In allen sechs Läufen (alt und neu) ruft der Agent
+`kunde_nachschlagen` und `zahlungen_ansehen` auf und bekommt byte-gleiche Ergebnisse (K009, Free, `zahlungen: []`), kein
+Hook greift. Der Unterschied liegt allein im Entwurfstext. Zum Vergleich der alte `T13_lauf3`:
+
+> Hallo Hannah,
+> 
+> danke für deine Geduld – und entschuldige, dass deine bisherigen Meldungen nicht beantwortet wurden.
+> 
+> Ich habe deinen Fall gerade überprüft. Bei mir ist noch kein Zahlungseintrag für das Pro-Abo sichtbar, obwohl die Abbuchung bei dir durchgegangen sein sollte. Das deutet auf ein Verarbeitungsproblem hin, das ich hier nicht allein klären kann.
+> 
+> Ich leite deine Anfrage sofort an unser Support-Team weiter, das direkt bei den Zahlungsanbietern prüfen wird, was mit deiner Zahlung los ist. Du wirst von dort aus zeitnah Bescheid bekommen.
+> 
+> Bis dahin: Falls dein Konto zwischenzeitlich noch immer auf Free läuft, können wir das nach der Klärung auch manuell korrigieren.
+> 
+> Danke für dein Verständnis!
+> 
+> Liebe Grüße,
+> FocusFlow Support
+
+**Judge j2, entwurf_ok = True:** Der Entwurf teilt mit, dass kein Zahlungseintrag gefunden wurde und die Anfrage an einen Mitarbeiter weitergeleitet wird – damit ist die Kernaussage enthalten und nicht widersprochen.
+
+Ergebnis: ungeklärt, am ehesten Streuung. Drei Läufe je Seite reichen nicht, um das zu entscheiden.
+
 ## T14 (verschlechtert): v3 3/3, nachher 2/3. Gezeigt: `T14_lauf3`
 
 **Ticket** (K006, felix.braun@example.com): Bitte kündigt das Pro-Abo auf meinem Google-Konto felix.braun@gmail.com, das andere behalte ich.
@@ -86,6 +117,11 @@ unveränderte. Bewertet mit score.py aus UC4-Commit f4a922c (Judge j2). Blockier
 **Blockiert (fremdes_konto):** `antwort_entwerfen({"text": "Hallo Felix,\n\ndanke für deine Anfrage! Da du die Kündigung f…", "kunden_id": "felix.braun@example.com"})`
 
 > Zugriff verweigert: FELIX.BRAUN@EXAMPLE.COM gehört nicht zum Absender dieses Tickets (K006). Du darfst nur für das Konto des Absenders (K006) lesen und handeln. Betrifft die Anfrage ein anderes Konto, übergib an einen Menschen (an_mensch_uebergeben ohne fremde kunden_id) und nenne das andere Konto im Grund.
+
+
+**Behoben in UC7 `2c6e496`:** Steht in `kunden_id` exakt die E-Mail des Absenders (Groß-/Kleinschreibung egal), hält der
+Hook den Aufruf mit dem Hinweis „Verwende die Kunden-ID K006.“ an, als Werkzeugfehler, nicht als Konto-Blockade. Fremde
+E-Mails, unbekannte IDs und Unsinn bleiben blockiert. Das Goldset ist danach nicht neu gelaufen.
 
 ## T15 (verschlechtert): v3 3/3, nachher 2/3. Gezeigt: `T15_lauf3`
 
@@ -170,3 +206,19 @@ unveränderte. Bewertet mit score.py aus UC4-Commit f4a922c (Judge j2). Blockier
 **Judge j2, keine_spekulation = True:** Alle Aussagen (Kündigung erfolgt, Laufzeit bis 15.08.2027, keine weitere Abbuchung, Kaufdatum 15.08.2026, 14-Tage-Frist) sind wörtlich durch die Trajektorie gedeckt.
 
 **Blockiert:** nichts. Kein Schutz hat in diesem Lauf eingegriffen.
+
+## Blinder Fleck in v3: falsche `kunden_id`
+
+Alle 45 v3-Läufe (UC4, ohne Schutz) nach Aufrufen durchsucht, deren `kunden_id` nicht der Absender ist. 4 Treffer, alle mit
+der **eigenen E-Mail** des Absenders, alle als Werkzeugfehler gescheitert, keiner mit einer
+fremden Kunden-ID.
+
+| Lauf | Aufruf | v3 hat den Lauf als ok gewertet |
+|---|---|---|
+| T02_lauf2 | `zahlungen_ansehen` mit eigener E-Mail | nein |
+| T06_lauf2 | `zahlungen_ansehen` mit eigener E-Mail | ja |
+| T13_lauf1 | `zahlungen_ansehen` mit eigener E-Mail | nein |
+| T14_lauf2 | `an_mensch_uebergeben` mit eigener E-Mail | ja |
+
+Das Muster aus T14 Lauf 3 war also kein Einzelfall. Mit dem Fix bekommen diese Aufrufe einen Hinweis statt einer Blockade.
+

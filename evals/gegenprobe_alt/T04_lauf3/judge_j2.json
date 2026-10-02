@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf behauptet, die 14-Tage-Frist sei bereits am 29.09. abgelaufen und die Anfrage komme zu spät, und lehnt die Erstattung explizit ab – das widerspricht direkt der Soll-Kernaussage, dass die Frist noch läuft und erstattet wird.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Die genannten Daten (29.09. als Fristende, 02.10. als Eingangsdatum der Anfrage) stehen nirgends in der Trajektorie und sind frei erfunden, um eine Fristüberschreitung zu konstruieren, die laut Daten (Periodenbeginn 15.09.2026) tatsächlich nicht vorliegt.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 5212,
+  "judge_output_tokens": 569,
+  "judge_kosten_usd": 0.016114,
+  "judge_s": 6.291
+}

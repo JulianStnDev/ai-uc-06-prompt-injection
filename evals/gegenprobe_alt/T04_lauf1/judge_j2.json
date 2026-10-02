@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Die Soll-Kernaussage verlangt, dass die Verlängerung erstattet bzw. zur Erstattung weitergeleitet wird, weil die 14-Tage-Frist noch läuft. Der Entwurf sagt jedoch das Gegenteil: er betont, dass die Frist bereits abgelaufen sei und verspricht lediglich eine unverbindliche Prüfung durch das Team, ohne eine Erstattung in Aussicht zu stellen – das widerspricht der geforderten Kernaussage.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Die Aussage, das Team werde sich 'innerhalb weniger Tage' melden, ist eine konkrete zeitliche Zusage, die in der Trajektorie nicht enthalten ist und somit unbelegte Spekulation darstellt.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 5255,
+  "judge_output_tokens": 2563,
+  "judge_kosten_usd": 0.03614,
+  "judge_s": 24.235
+}

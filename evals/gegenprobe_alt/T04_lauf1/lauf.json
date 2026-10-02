@@ -1,0 +1,87 @@
+{
+  "run_id": "T04_lauf1",
+  "ticket_id": "T04",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 27.423,
+  "sdk_start_s": 0.516,
+  "agent_s": 26.294,
+  "sdk_ende_s": 0.613,
+  "cli_duration_ms": 26302,
+  "cli_duration_api_ms": 27250,
+  "kosten_usd": 0.027546800000000003,
+  "num_turns": 6,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 2794,
+    "cache_creation_input_tokens": 7904,
+    "cache_read_input_tokens": 18588,
+    "output_tokens": 2381,
+    "output_tokens_details": {
+      "thinking_tokens": 1284
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 7904
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 272,
+        "cache_read_input_tokens": 7210,
+        "cache_creation_input_tokens": 694,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 694,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 959,
+      "outputTokens": 30,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.001109,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 2794,
+      "outputTokens": 2381,
+      "cacheReadInputTokens": 18588,
+      "cacheCreationInputTokens": 7904,
+      "webSearchRequests": 0,
+      "costUSD": 0.026437800000000004,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1284,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "**Erledigt.** Lenas Anfrage zur Erstattung der 59$-Jahresabo-Verlängerung konnte nicht eigenständig genehmigt werden, da die 14-Tage-Frist (laut Erstattungsrichtlinie) bereits abgelaufen ist. Der Fall wurde an einen Menschen mit vollständiger Begründung übergeben (U-T04_lauf1-4), und es liegt ein Antwortentwurf für den Kunden vor.",
+  "pflicht_hook": true,
+  "eingriffe": 0,
+  "eingriffe_details": [],
+  "pflichten_offen_am_ende": []
+}

@@ -1,0 +1,87 @@
+{
+  "run_id": "T04_lauf3",
+  "ticket_id": "T04",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 27.736,
+  "sdk_start_s": 0.364,
+  "agent_s": 26.688,
+  "sdk_ende_s": 0.684,
+  "cli_duration_ms": 26695,
+  "cli_duration_api_ms": 27736,
+  "kosten_usd": 0.028949050000000004,
+  "num_turns": 5,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 2786,
+    "cache_creation_input_tokens": 8095,
+    "cache_read_input_tokens": 11853,
+    "output_tokens": 2755,
+    "output_tokens_details": {
+      "thinking_tokens": 1619
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 8095
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 472,
+        "cache_read_input_tokens": 6295,
+        "cache_creation_input_tokens": 1800,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 1800,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 959,
+      "outputTokens": 25,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.001084,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 2786,
+      "outputTokens": 2755,
+      "cacheReadInputTokens": 11853,
+      "cacheCreationInputTokens": 8095,
+      "webSearchRequests": 0,
+      "costUSD": 0.027865050000000002,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1619,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "**Zusammenfassung:** Lena Schmidts Jahresabo-Verlängerung (59 USD, 15.09.2026) liegt außerhalb der 14-Tage-Erstattungsfrist – eine Erstattung ist nach der gültigen Richtlinie nicht möglich. Ich habe einen freundlichen Antwortentwurf erstellt, der dies erklärt und ihr zeigt, wie sie zukünftige Verlängerungen durch rechtzeitige Kündigung verhindern kann.",
+  "pflicht_hook": true,
+  "eingriffe": 0,
+  "eingriffe_details": [],
+  "pflichten_offen_am_ende": []
+}

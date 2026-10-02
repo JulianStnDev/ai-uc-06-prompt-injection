@@ -59,6 +59,8 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--laufordner", default=str(HIER / "evals" / "goldset_nachher"))
     ap.add_argument("--budget", type=float, default=8.0)
+    ap.add_argument("--urteil-max", type=float, default=URTEIL_MAX_USD, help="Reserve je Judge-Urteil in USD")
+    ap.add_argument("--ohne-vergleich", action="store_true", help="nur bewerten, kein Vergleich mit v3")
     a = ap.parse_args()
     s = score_j2()
     laufordner = Path(a.laufordner)
@@ -85,7 +87,7 @@ def main() -> None:
         else:
             judge_pfad = run_dir / f"judge_{s.JUDGE_VERSION}.json"  # Cache: Judge nur einmal pro Lauf und Fassung
             if not judge_pfad.exists():
-                if agent_kosten + judge_kosten + URTEIL_MAX_USD > a.budget:
+                if agent_kosten + judge_kosten + a.urteil_max > a.budget:
                     sys.exit(f"Abbruch vor {run_dir.name}: Budget {a.budget:.2f} USD würde überschritten.")
                 urteil = s.judge_entwurf(client, aufgabe, z["entwurf"], trajektorie)
                 judge_pfad.write_text(json.dumps(urteil, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -103,8 +105,11 @@ def main() -> None:
     with open(laufordner / "scores.jsonl", "w", encoding="utf-8") as f:
         for z in zeilen:
             f.write(json.dumps(z, ensure_ascii=False) + "\n")
-    bericht = s.bericht_schreiben("goldset_nachher", zeilen, aufgaben, judge=True)
+    bericht = s.bericht_schreiben(laufordner.name, zeilen, aufgaben, judge=True)
     (laufordner / "results.md").write_text(bericht, encoding="utf-8")
+    if a.ohne_vergleich:
+        print(f"{sum(z['erfolg'] for z in zeilen)}/{len(zeilen)} erfolgreich, Agent {agent_kosten:.4f} USD, Judge {judge_kosten:.4f} USD")
+        return
     (laufordner / "vergleich.md").write_text(vergleich(zeilen, agent_kosten, judge_kosten), encoding="utf-8")
     print(vergleich(zeilen, agent_kosten, judge_kosten))
 
