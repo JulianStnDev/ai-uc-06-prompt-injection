@@ -270,6 +270,9 @@ funktionieren, zeigt das UC4-Goldset nach dem Umbau.
 | B2 | Code-Prüfung von Entwürfen ohne Empfehlung auf Erstattungs- und Geldzusagen |
 | B1, B3 (Automation Bias) | Konsole: Original-Ticket immer sichtbar, Ergebnis der Regelprüfung auf der Karte |
 
+Umgesetzt in UC7, PR #11 (Commit `945d475`, noch nicht deployt). Belege: [evals/schutz_vorher_nachher.md](../evals/schutz_vorher_nachher.md),
+Rundgang für David, Anna und Emma: [RUNDGANG_SCHUTZ.md](RUNDGANG_SCHUTZ.md).
+
 Was der Code nicht schließen kann, bleibt Restrisiko und wird nach Branch (b) hier nachgetragen: B8 (Ton), B9 (zweite
 Ordnung im Antwort-Modell), B10 soweit es nur um Text statt um Werkzeugaufrufe geht.
 
