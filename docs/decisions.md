@@ -82,19 +82,27 @@ teuer“. B10 (vergiftete Daten) steigt auf Priorität 2, weil im Produkt Kunden
 Begründung: Verteidigungen sollen das Produkt sicherer machen. Eine Matrix, die von Demo-Eigenheiten geprägt ist,
 würde die falschen Lücken zuerst schließen.
 
-## 2026-10-02: Abbruch durch einen Sicherheitsfilter beim Ausformulieren der Angriffe
+## 2026-10-02: Zwei Abbrüche durch einen Sicherheitsfilter beim Ausformulieren von Angriffen
 
-Was passiert ist: Beim Ausformulieren der Testfälle für Branch (b), also der konkreten Angriffstexte für die
-Kategorien K1 bis K3, hat ein Sicherheitsfilter die Antwort abgebrochen. Vorgabe war, in diesem Fall nicht
-umzuformulieren, sondern zu stoppen und zu melden. So ist es geschehen. Danach war nichts geschrieben: keine Datei,
-kein Commit, keine `.env`, kein API-Aufruf, keine Kosten. UC7 war unverändert.
+Zweimal hat ein Sicherheitsfilter die Arbeit gestoppt, beide Male beim Ausformulieren konkreter Angriffstexte. Beide
+Male galt: nicht umformulieren, sondern stoppen und melden. So ist es geschehen.
 
-Folge: siehe nächster Eintrag.
+1. **30.09.2026, UC5, Branch (e):** Beim Schreiben einer Liste von Angriffs-Prompts für die Modell-Demo gegen den
+   Analytics-Copilot (ai-uc-05-text-to-sql, docs/decisions.md, Eintrag „Branch (e): Guardrails“). Folge dort:
+   docs/GUARDRAILS.md stützt sich nur auf deterministische Tests der Harness- und Datenbank-Schichten, die Spalte
+   „Modell“ ist als „nicht gemessen, folgt in UC6“ gekennzeichnet. Die Angriffsdemo wurde nach UC6 verschoben.
+2. **02.10.2026, UC6, Branch (b):** Beim Ausformulieren der Testfälle K1 bis K3 (direkte Täuschung, fremde Konten,
+   versteckte Anweisungen in Daten) gegen den UC7-Agent. Danach war nichts geschrieben: keine Datei, kein Commit, keine
+   `.env`, kein API-Aufruf, keine Kosten. UC7 war unverändert.
+
+Folge: siehe nächster Eintrag. Für UC5 heißt das: Die nach UC6 verschobene Angriffsdemo gibt es auch hier nicht, die
+Spalte „Modell“ in UC5 bleibt „nicht gemessen“. Damit ist die offene Frage aus dem Eintrag „Tests lokal gegen den
+UC7-Code“ beantwortet: UC6 greift den Text-to-SQL-Copiloten nicht mit Modell-Angriffen an.
 
 ## 2026-10-02: Von „Angriffe messen“ zu „Schutz im Code beweisen“
 
 Kontext: Geplant war, Angriffe auszuformulieren (K1 bis K3, je 8/8, 8/8, 6/6 mit Kontrollfällen, 3 Läufe je Fall) und
-die Angriffs-Erfolgsquote zu messen. Das scheitert am Sicherheitsfilter. Es wäre auch inhaltlich die schwächere Frage:
+die Angriffs-Erfolgsquote zu messen. Das scheitert am Sicherheitsfilter, wie schon in UC5. Es wäre auch inhaltlich die schwächere Frage:
 Eine Erfolgsquote misst vor allem, wie gut der Prompt hält, also genau die Schicht, auf die wir uns nicht mehr
 verlassen wollen.
 
