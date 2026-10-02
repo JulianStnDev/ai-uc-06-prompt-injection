@@ -2,7 +2,7 @@
 
 # UC6 — Prompt Injection & Guardrails: Attacking the Support Agent
 
-> Status: threat model for the real product ([docs/BEDROHUNGSMODELL.md](docs/BEDROHUNGSMODELL.md), in German). Next: guardrails in the UC7 code, proven by deterministic tests. No API cost yet. The target is the live support agent from [UC7](https://github.com/JulianStnDev/ai-uc-07-deployment).
+> Status: guardrails built into the UC7 code and proven (UC7 PR #11, not deployed yet). Threat model and residual risk: [docs/BEDROHUNGSMODELL.md](docs/BEDROHUNGSMODELL.md), in German. The target is the live support agent from [UC7](https://github.com/JulianStnDev/ai-uc-07-deployment).
 
 ## Problem
 The support agent from UC7 reads customer data, cancels subscriptions and recommends refunds. A logged-in customer writes free text to it, and the agent reads data that is partly set by customers or third parties. Free text is an attack surface: a language model cannot reliably tell instructions from data. UC6 asks: what can an attacker achieve with text, which guardrail actually holds, and where is there only one?
@@ -25,17 +25,31 @@ Two repos with clear jobs:
 Everything runs locally against a pinned UC7 commit, not against the live URL (otherwise it would use up the demo's monthly budget and skew its statistics). Diagram of entry points and guardrails: [docs/BEDROHUNGSMODELL.md, section 5](docs/BEDROHUNGSMODELL.md#5-diagramm-einfallstore-und-schutzschichten).
 
 ## Evaluation Results
-No measurements yet. Findings from the threat model, read from the code only:
+As of Oct 2, 2026, UC7 PR #11 (not deployed yet). Details: [evals/results.md](evals/results.md), section 10 of the [threat model](docs/BEDROHUNGSMODELL.md#10-nach-branch-b-restrisiko-nachher) (German).
 
-- **Money is protected structurally:** no tool pays out or sends anything; the agent can only recommend.
-- **No hook checks the sender's account.** Whether the agent acts for the right account is governed by the prompt alone. A rule check flags violations only after the run.
-- **The refund rules live only in the help article.** The tool checks neither the deadline nor double charges.
-- **Only one layer, the prompt,** stands in front of three threats with high residual risk: reading other customers' data, acting for another customer's account, and promising a refund in the draft without recommending it.
+| Measurement | Before | After |
+|---|---|---|
+| Attack calls that get through (23 cases, no API) | 16 of 23 | **0 of 23** |
+| Legitimate calls that go through (14 cases, no API) | 14 of 14 | 14 of 14 |
+| Promise check: promises caught / false alarms | – | 7 of 7 / **0 of 1,241** sentences (95% upper bound ≈ 0.24%) |
+| UC4 gold set, success per run (judge j2) | 39 of 45 | 34 of 45 |
+| UC4 gold set, pass^3 | 11 of 15 | 10 of 15 |
+
+**The guardrails cost 1 run (false alarm, fixed), 1 run is a real catch, the rest is not caused by the guardrails.** The false alarm (own email used as customer ID, T14) is fixed. The real catch: in T15 the agent tried to read Anna's payments. T04 also fails with the old code in a counter-test; T13 is sampling variance with identical input.
+
+Residual risk after the rebuild:
+
+| Threat | Before | After |
+|---|---|---|
+| Acting for another account, reading other customers' data | high | **low** (account binding in the hook) |
+| Promising a refund without recommending it | high | **medium** (the promise check is a heuristic) |
+| Unjustified refund for one's own account | medium | **low** (rules in the tool) |
+| Hidden instructions in data the agent reads | medium–high | **medium** (calls are bound, draft text can still be steered) |
 
 ## Cost & Latency
-- Cost per 1000 requests: not measured yet (UC4 gold set after the rebuild). 0 USD API cost so far.
-- p95 latency: not measured yet (UC4 gold set after the rebuild)
-- Quality metric: planned are the number of gaps proven closed by a test in code, and the UC4 gold set without new blocks
+- Cost per 1000 requests: about 28 USD (agent, Haiku 4.5, mean of 45 gold set runs after the rebuild). Total UC6 cost so far: 2.45 USD.
+- p95 latency: 45.0 s per ticket (median 23.5 s), 45 gold set runs, local
+- Quality metric: 0 of 23 attack calls get through; gold set 34 of 45, every lost run attributed individually
 
 ## Learnings
 - My picture of UC7 was "the hooks check the sender's account". The code says: the hooks check the tool name and the duties; only the prompt checks the account. A threat model pays off before the first attack, if you write it from the code rather than from memory.

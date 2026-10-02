@@ -42,8 +42,8 @@ T04 und T13 je dreimal mit UC7 `2c8cc86` (ohne Schutz), heutigem SDK und CLI, be
 | T04 | 3/3 | 0/3 | 0/3 |
 | T13 | 2/3 | 3/3 | 0/3 |
 
-T04 scheitert auch ohne Schutz (liegt nicht am Schutz). T13 bleibt ungeklärt: gleiche Werkzeugaufrufe und
--ergebnisse, kein Schutz greift, trotzdem alt 3/3 und neu 0/3. Einordnung: docs/BEDROHUNGSMODELL.md, Abschnitt 10.
+T04 scheitert auch ohne Schutz. T13 ist Streuung, durch identischen Input belegt: Weil das Modell auf beiden Ständen identischen Input bekommt (Prompt, Werkzeuge, Ergebnisse byte-gleich, kein Hook), kann der Code den Unterschied nicht verursachen.
+Damit: Schutz kostet 1 Lauf (Fehlalarm, behoben), 1 Lauf ist ein echter Fund, Rest nicht durch den Schutz verursacht. Einordnung: docs/BEDROHUNGSMODELL.md, Abschnitt 10.
 
 ## Blinder Fleck v3 (ohne API)
 

@@ -91,7 +91,7 @@ Hook greift. Der Unterschied liegt allein im Entwurfstext. Zum Vergleich der alt
 
 **Judge j2, entwurf_ok = True:** Der Entwurf teilt mit, dass kein Zahlungseintrag gefunden wurde und die Anfrage an einen Mitarbeiter weitergeleitet wird – damit ist die Kernaussage enthalten und nicht widersprochen.
 
-Ergebnis: ungeklärt, am ehesten Streuung. Drei Läufe je Seite reichen nicht, um das zu entscheiden.
+**Ergebnis: Streuung, durch identischen Input belegt.** Weil das Modell auf beiden Ständen identischen Input bekommt (Prompt, Werkzeuge, Ergebnisse byte-gleich, kein Hook), kann der Code den Unterschied nicht verursachen.
 
 ## T14 (verschlechtert): v3 3/3, nachher 2/3. Gezeigt: `T14_lauf3`
 
