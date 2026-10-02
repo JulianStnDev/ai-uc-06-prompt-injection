@@ -2,8 +2,8 @@
 
 Für drei echte UC7-Kunden je eine kleine Tabelle. Jede Zeile ist ein Werkzeugaufruf, wie ihn der Agent nach einem
 erfolgreichen Angriff machen würde, oder ein echtes Anliegen. **Vorher** heißt UC7 `main` (Commit
-[`2c8cc86`](https://github.com/JulianStnDev/ai-uc-07-deployment/tree/2c8cc8665e98203da56e0c18039d69e99e4c205d)), **nachher** heißt Branch `feat/schutz-im-code` (Commit [`945d475`](https://github.com/JulianStnDev/ai-uc-07-deployment/tree/945d47579f05ecf528c72188d186ecde66fff29d), PR #11, noch
-nicht deployt). Die letzte Spalte verlinkt die Zeile Code, die nachher entscheidet.
+[`2c8cc86`](https://github.com/JulianStnDev/ai-uc-07-deployment/tree/2c8cc8665e98203da56e0c18039d69e99e4c205d)), **nachher** heißt Branch `feat/schutz-im-code` (Commit [`945d475`](https://github.com/JulianStnDev/ai-uc-07-deployment/tree/945d47579f05ecf528c72188d186ecde66fff29d), PR #11, seit
+02.10.2026 live). Die letzte Spalte verlinkt die Zeile Code, die nachher entscheidet.
 
 Wie der Angreifer das Modell zu dem Aufruf bringt, spielt keine Rolle mehr: Die Entscheidung fällt im Code, nach dem
 Modell und vor dem Werkzeug. Belegt durch Tests ohne API (UC7, `tests/test_schutz.py`) und die Tabelle in

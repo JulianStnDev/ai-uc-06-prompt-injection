@@ -2,7 +2,7 @@
 
 # UC6 — Prompt Injection & Guardrails: Attacking the Support Agent
 
-> Status: guardrails built into the UC7 code and proven (UC7 PR #11, not deployed yet). Threat model and residual risk: [docs/BEDROHUNGSMODELL.md](docs/BEDROHUNGSMODELL.md), in German. The target is the live support agent from [UC7](https://github.com/JulianStnDev/ai-uc-07-deployment).
+> Status: guardrails built into the UC7 code and proven (UC7 PR #11, live since Oct 2, 2026 as Cloud Run revision `uc7-00009-pv4`). Threat model and residual risk: [docs/BEDROHUNGSMODELL.md](docs/BEDROHUNGSMODELL.md), in German. The target is the live support agent from [UC7](https://github.com/JulianStnDev/ai-uc-07-deployment).
 
 ## Problem
 The support agent from UC7 reads customer data, cancels subscriptions and recommends refunds. A logged-in customer writes free text to it, and the agent reads data that is partly set by customers or third parties. Free text is an attack surface: a language model cannot reliably tell instructions from data. UC6 asks: what can an attacker achieve with text, which guardrail actually holds, and where is there only one?
@@ -25,7 +25,7 @@ Two repos with clear jobs:
 Everything runs locally against a pinned UC7 commit, not against the live URL (otherwise it would use up the demo's monthly budget and skew its statistics). Diagram of entry points and guardrails: [docs/BEDROHUNGSMODELL.md, section 5](docs/BEDROHUNGSMODELL.md#5-diagramm-einfallstore-und-schutzschichten).
 
 ## Evaluation Results
-As of Oct 2, 2026, UC7 PR #11 (not deployed yet). Details: [evals/results.md](evals/results.md), section 10 of the [threat model](docs/BEDROHUNGSMODELL.md#10-nach-branch-b-restrisiko-nachher) (German).
+As of Oct 2, 2026, UC7 PR #11 (merged as `d86b433`, live as revision `uc7-00009-pv4`). Details: [evals/results.md](evals/results.md), section 10 of the [threat model](docs/BEDROHUNGSMODELL.md#10-nach-branch-b-restrisiko-nachher) (German).
 
 | Measurement | Before | After |
 |---|---|---|

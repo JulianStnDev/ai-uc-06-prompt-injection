@@ -2,7 +2,7 @@
 
 # UC6 — Prompt Injection & Guardrails: Angriffe auf den Support-Agent
 
-> Stand: Schutz im UC7-Code gebaut und belegt (UC7 PR #11, noch nicht deployt). Bedrohungsmodell und Restrisiko: [docs/BEDROHUNGSMODELL.md](docs/BEDROHUNGSMODELL.md). Ziel ist der live laufende Support-Agent aus [UC7](https://github.com/JulianStnDev/ai-uc-07-deployment).
+> Stand: Schutz im UC7-Code gebaut und belegt (UC7 PR #11, live seit 02.10.2026 als Cloud-Run-Revision `uc7-00009-pv4`). Bedrohungsmodell und Restrisiko: [docs/BEDROHUNGSMODELL.md](docs/BEDROHUNGSMODELL.md). Ziel ist der live laufende Support-Agent aus [UC7](https://github.com/JulianStnDev/ai-uc-07-deployment).
 
 ## Problem
 Der Support-Agent aus UC7 liest Kundendaten, kündigt Abos und empfiehlt Erstattungen. Ein eingeloggter Kunde schreibt ihm freien Text, und der Agent liest Daten, die teils Kunden oder Dritte bestimmen. Freier Text ist eine Angriffsfläche: Ein Sprachmodell kann Anweisungen und Daten nicht sicher auseinanderhalten. UC6 fragt: Was kann ein Angreifer mit Text erreichen, welche Schutzschicht hält wirklich, und wo steht nur eine?
@@ -25,7 +25,7 @@ Zwei Repos mit klarer Aufgabe:
 Alles läuft lokal gegen einen festen UC7-Commit, nicht gegen die Live-URL (sonst verbraucht es das Monatsbudget der Demo und verfälscht ihre Statistik). Diagramm der Einfallstore und Schutzschichten: [docs/BEDROHUNGSMODELL.md, Abschnitt 5](docs/BEDROHUNGSMODELL.md#5-diagramm-einfallstore-und-schutzschichten).
 
 ## Evaluationsergebnisse
-Stand 02.10.2026, UC7 PR #11 (noch nicht deployt). Details: [evals/results.md](evals/results.md), Abschnitt 10 im [Bedrohungsmodell](docs/BEDROHUNGSMODELL.md#10-nach-branch-b-restrisiko-nachher).
+Stand 02.10.2026, UC7 PR #11 (gemergt als `d86b433`, live als Revision `uc7-00009-pv4`). Details: [evals/results.md](evals/results.md), Abschnitt 10 im [Bedrohungsmodell](docs/BEDROHUNGSMODELL.md#10-nach-branch-b-restrisiko-nachher).
 
 | Messung | Vorher | Nachher |
 |---|---|---|

@@ -270,7 +270,7 @@ funktionieren, zeigt das UC4-Goldset nach dem Umbau.
 | B2 | Code-Prüfung von Entwürfen ohne Empfehlung auf Erstattungs- und Geldzusagen |
 | B1, B3 (Automation Bias) | Konsole: Original-Ticket immer sichtbar, Ergebnis der Regelprüfung auf der Karte |
 
-Umgesetzt in UC7, PR #11 (Commit `945d475`, noch nicht deployt). Belege: [evals/schutz_vorher_nachher.md](../evals/schutz_vorher_nachher.md),
+Umgesetzt in UC7, PR #11 (Commit `945d475`, seit 02.10.2026 live). Belege: [evals/schutz_vorher_nachher.md](../evals/schutz_vorher_nachher.md),
 Rundgang für David, Anna und Emma: [RUNDGANG_SCHUTZ.md](RUNDGANG_SCHUTZ.md).
 
 Was der Code nicht schließen kann, bleibt Restrisiko und wird nach Branch (b) hier nachgetragen: B8 (Ton), B9 (zweite
@@ -279,7 +279,7 @@ Ordnung im Antwort-Modell), B10 soweit es nur um Text statt um Werkzeugaufrufe g
 ## 10. Nach Branch (b): Restrisiko nachher
 
 Stand 02.10.2026, UC7 Branch `feat/schutz-im-code` (Commits `945d475`, `0f6391c`, `2c6e496`, `5c9c262`, PR #11),
-**nicht deployt**. Belege: [schutz_vorher_nachher.md](../evals/schutz_vorher_nachher.md),
+gemergt als `d86b433` und **seit 02.10.2026 live** (Cloud-Run-Revision `uc7-00009-pv4`, Rollback: UC7 docs/deploy.md). Belege: [schutz_vorher_nachher.md](../evals/schutz_vorher_nachher.md),
 [goldset_nachher/vergleich.md](../evals/goldset_nachher/vergleich.md), [gegenprobe_alt/](../evals/gegenprobe_alt/results.md),
 [goldset_anschauung.md](../evals/goldset_anschauung.md), [RUNDGANG_SCHUTZ.md](RUNDGANG_SCHUTZ.md).
 
