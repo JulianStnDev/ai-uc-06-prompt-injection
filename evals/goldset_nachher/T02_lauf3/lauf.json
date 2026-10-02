@@ -1,0 +1,87 @@
+{
+  "run_id": "T02_lauf3",
+  "ticket_id": "T02",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 29.409,
+  "sdk_start_s": 0.275,
+  "agent_s": 28.476,
+  "sdk_ende_s": 0.659,
+  "cli_duration_ms": 28481,
+  "cli_duration_api_ms": 29108,
+  "kosten_usd": 0.0306767,
+  "num_turns": 6,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 2762,
+    "cache_creation_input_tokens": 8760,
+    "cache_read_input_tokens": 12087,
+    "output_tokens": 2945,
+    "output_tokens_details": {
+      "thinking_tokens": 1818
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 8760
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 409,
+        "cache_read_input_tokens": 6492,
+        "cache_creation_input_tokens": 2268,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 2268,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 936,
+      "outputTokens": 19,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.001031,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 2762,
+      "outputTokens": 2945,
+      "cacheReadInputTokens": 12087,
+      "cacheCreationInputTokens": 8760,
+      "webSearchRequests": 0,
+      "costUSD": 0.0296457,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1818,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "**Fertig.** Ich habe Ben Hoffmanns Anfrage mit **hoher Priorität an einen Menschen übergeben** (U-T02_lauf3-4), da in den Zahlungsdaten nur einzelne Buchungen pro Monat sichtbar sind und unklar ist, ob es sich um eine Vormerkung oder echte doppelte Abbuchung handelt. Ein Kollege wird das bankenseitig überprüfen und ggf. die Erstattung freigeben. Gleichzeitig habe ich einen freundlichen Antwortentwurf hinterlegt, der Ben auffordert zu prüfen, ob es sich um eine Vormerkung handelt, und zusichert, dass wir uns kümmern.",
+  "pflicht_hook": true,
+  "eingriffe": 0,
+  "eingriffe_details": [],
+  "pflichten_offen_am_ende": []
+}

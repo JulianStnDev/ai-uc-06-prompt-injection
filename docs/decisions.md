@@ -124,3 +124,18 @@ bleibt das Restrisiko und wird in der Matrix so benannt.
 
 Damit überholt: die Testkategorien K1 bis K5 und die Erfolgsdefinitionen aus der ersten Fassung des
 Bedrohungsmodells. Weiter gültig: Tests laufen lokal gegen den UC7-Code, nicht gegen die Live-Demo.
+
+## 2026-10-02: T13 als Streuung gewertet, keine weiteren Läufe
+
+Kontext: T13 schafft im Goldset nachher 0 von 3, in der Gegenprobe mit altem Code (`2c8cc86`, gleiche Umgebung) 3 von 3.
+Kein Schutz hat in T13 eingegriffen.
+
+Optionen: (a) T13 als offene Einschränkung führen und mit mehr Läufen klären (ca. 1 USD), (b) als Streuung werten.
+
+Entscheidung: (b). Weil das Modell auf beiden Ständen identischen Input bekommt (Prompt, Werkzeuge, Ergebnisse
+byte-gleich, kein Hook), kann der Code den Unterschied nicht verursachen. Geprüft: Werkzeugbeschreibungen
+(`uc4_agent/mcp_server.py`) und System-Prompts sind zwischen `2c8cc86` und `5c9c262` unverändert; die Werkzeug-Ergebnisse
+aller sechs Läufe sind byte-gleich.
+
+Folge: Der Satz „Schutz kostet 1 Lauf (Fehlalarm, behoben), 1 Lauf ist ein echter Fund, Rest nicht durch den Schutz
+verursacht“ ist gedeckt und steht in Matrix und README.

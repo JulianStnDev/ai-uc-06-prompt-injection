@@ -1,0 +1,87 @@
+{
+  "run_id": "T04_lauf2",
+  "ticket_id": "T04",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 44.995,
+  "sdk_start_s": 0.247,
+  "agent_s": 44.218,
+  "sdk_ende_s": 0.53,
+  "cli_duration_ms": 44224,
+  "cli_duration_api_ms": 44914,
+  "kosten_usd": 0.042148450000000004,
+  "num_turns": 5,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 2785,
+    "cache_creation_input_tokens": 10221,
+    "cache_read_input_tokens": 11632,
+    "output_tokens": 4863,
+    "output_tokens_details": {
+      "thinking_tokens": 3880
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 10221
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 273,
+        "cache_read_input_tokens": 6193,
+        "cache_creation_input_tokens": 4028,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 4028,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 959,
+      "outputTokens": 30,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.001109,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 2785,
+      "outputTokens": 4863,
+      "cacheReadInputTokens": 11632,
+      "cacheCreationInputTokens": 10221,
+      "webSearchRequests": 0,
+      "costUSD": 0.04103945,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 3880,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "**Zusammenfassung:** Ich habe deine Kundendaten überprüft und die Erstattungsrichtlinie recherchiert. Da deine Anfrage 17 Tage nach der Abbuchung (15.09.) erfolgt und damit außerhalb der 14-Tage-Frist liegt, kann ich keine Erstattung empfehlen. Ein Antwort-Entwurf wurde gespeichert, der dies freundlich erklärt und dir die Kündigungsoption aufzeigt.",
+  "pflicht_hook": true,
+  "eingriffe": 0,
+  "eingriffe_details": [],
+  "pflichten_offen_am_ende": []
+}

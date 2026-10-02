@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf teilt mit, dass das Konto noch Free-Status hat, die Zahlung nicht auffindbar ist und der Fall an das Support-Team weitergeleitet wurde – damit ist die Kernaussage (Weitergabe wegen fehlender Zahlung) enthalten und wird nicht widersprochen.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Der Entwurf behauptet als Tatsache, es handle sich um ein „bekanntes Problem“ mit der Apple-Synchronisierung, obwohl dies in der Übergabe nur als unbestätigte Vermutung des Agents festgehalten wurde; zudem verspricht er eine Rückmeldung „noch heute oder morgen“ sowie konkrete Schritte des Teams (Prüfung bei Apple, manuelle Aktivierung, Rückerstattung), die so nicht in der Trajektorie zugesichert sind.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 8385,
+  "judge_output_tokens": 1105,
+  "judge_kosten_usd": 0.02782,
+  "judge_s": 10.661
+}

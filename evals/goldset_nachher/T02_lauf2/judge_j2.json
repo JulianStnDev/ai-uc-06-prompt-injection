@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf nennt zwar die eine Belastung vom 3.9., spekuliert aber direkt danach, dass eine zweite Belastung noch verarbeitet werden könnte oder es „eine andere Erklärung“ gebe – damit wird die Kernaussage, dass keine Doppelabbuchung vorliegt, nicht klar vermittelt, sondern relativiert.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Die Aussage, die zweite Belastung werde „möglicherweise noch verarbeitet“ oder es gebe „eine andere Erklärung“, ist eine unbelegte Vermutung, die so nicht in der Trajektorie steht und dem Kunden gegenüber nicht hätte geäußert werden dürfen.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 5691,
+  "judge_output_tokens": 883,
+  "judge_kosten_usd": 0.020212,
+  "judge_s": 8.499
+}

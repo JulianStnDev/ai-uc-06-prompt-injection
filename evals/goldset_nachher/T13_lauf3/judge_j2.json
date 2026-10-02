@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf erwähnt zwar die Weiterleitung, nennt aber nicht den tatsächlichen Grund laut Trajektorie (keine Zahlung zum Konto gefunden), sondern suggeriert stattdessen, es habe eine Zahlung gegeben, die nur 'nicht wie erwartet verarbeitet' wurde – das widerspricht der Soll-Kernaussage.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Die Formulierung 'warum die Zahlung nicht wie erwartet verarbeitet wurde' unterstellt eine tatsächlich erfolgte Zahlung, obwohl die Trajektorie keine Zahlung zu diesem Konto findet – das ist eine ungedeckte Spekulation über den Hergang. Zudem ist die Zusage 'Pro-Zugang schnellstmöglich aktiviert' ein konkretes Versprechen, das nicht durch die Trajektorie (nur Weiterleitung, kein zugesagtes Ergebnis) gedeckt ist.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 8094,
+  "judge_output_tokens": 1517,
+  "judge_kosten_usd": 0.031358,
+  "judge_s": 12.998
+}

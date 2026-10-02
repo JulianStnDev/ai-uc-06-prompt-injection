@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf enthält exakt die Kernaussage: Die anteilige Erstattung ist wegen Ablauf der 14-Tage-Frist nicht möglich, und widerspricht ihr nicht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Kündigung erfolgt, Laufzeit bis 15.08.2027, keine weitere Abbuchung, Kaufdatum 15.08.2026, 14-Tage-Frist) sind wörtlich durch die Trajektorie gedeckt.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 5123,
+  "judge_output_tokens": 224,
+  "judge_kosten_usd": 0.012486,
+  "judge_s": 2.883
+}

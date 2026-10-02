@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf enthält die Kernaussage: Das Abo ist gekündigt und Pro läuft bis zum 03.10.2026 weiter, was exakt dem wirksam_zum-Datum aus der Trajektorie entspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Kündigung erfolgt, Laufzeit bis 3. Oktober 2026, keine weitere Abbuchung) sind wörtlich durch das Ergebnis des abo_kuendigen-Aufrufs gedeckt.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 1941,
+  "judge_output_tokens": 228,
+  "judge_kosten_usd": 0.006162,
+  "judge_s": 2.811
+}

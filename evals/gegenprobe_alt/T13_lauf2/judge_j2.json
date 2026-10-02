@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf kommuniziert klar, dass das Anliegen an einen Spezialisten (Mitarbeiter) weitergegeben wird, was die Kernaussage der Weiterleitung erfüllt; auch wenn der genaue Grund 'keine Zahlung gefunden' nicht wörtlich genannt wird, widerspricht nichts dieser Aussage.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Der Entwurf behauptet gegenüber der Kundin konkret, dass 'möglicherweise Details zu deiner Apple-ID' benötigt werden, um die Transaktion zu finden – das ist eine Vermutung über die Ursache (Store-Abo), die zwar intern in der Übergabe-Begründung des Agents auftaucht, aber als zusätzliche Spekulation gegenüber dem Kunden formuliert wird und nicht eindeutig durch die Trajektorie belegt ist.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 5274,
+  "judge_output_tokens": 2295,
+  "judge_kosten_usd": 0.033498,
+  "judge_s": 22.429
+}

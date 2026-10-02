@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf gibt die Kernaussage korrekt wieder: Das Jahresabo wurde über den App Store gekauft, FocusFlow kann es nicht selbst erstatten, und die Erstattung muss direkt bei Apple beantragt werden.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Die Aussage 'Apple hat das Rückgaberecht für App-Käufe, also hast du gute Chancen' ist eine unbelegte Spekulation über die Erfolgsaussichten, die nicht durch die Trajektorie gedeckt ist.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 4837,
+  "judge_output_tokens": 458,
+  "judge_kosten_usd": 0.014254,
+  "judge_s": 4.634
+}

@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf nennt den korrekten Betrag von 59 USD, bestätigt dass der Kauf innerhalb der 14-Tage-Frist liegt und dass eine Erstattung eingeleitet wurde – das entspricht der Soll-Kernaussage vollständig.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Betrag, Frist, eingeleitete Erstattung, Folgen für den Pro-Zugang, Bearbeitungsdauer von 5–10 Werktagen) stammen direkt aus der Trajektorie bzw. den allgemeinen Richtlinien im Hilfeartikel und werden nicht als spekulative Vermutungen über Ursachen präsentiert.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 6332,
+  "judge_output_tokens": 1130,
+  "judge_kosten_usd": 0.023964,
+  "judge_s": 11.546
+}

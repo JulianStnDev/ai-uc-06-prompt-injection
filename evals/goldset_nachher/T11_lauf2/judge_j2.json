@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf vermittelt klar, dass FocusFlow den Kauf nicht selbst erstatten kann und die Erstattung nur über Google Play möglich ist – die Kernaussage ist also enthalten und wird nicht widersprochen.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Der Entwurf behauptet ein konkretes aktuelles Datum ('heute ist 02.10.2026') und leitet daraus eine Fristüberschreitung ab, obwohl dieses Datum in der Trajektorie nirgends vorkommt – das ist eine nicht gedeckte Spekulation.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 5892,
+  "judge_output_tokens": 764,
+  "judge_kosten_usd": 0.019424,
+  "judge_s": 8.589
+}

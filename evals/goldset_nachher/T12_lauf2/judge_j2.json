@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf nennt korrekt 6,99 USD monatlich und 59 USD jährlich, was exakt der aktuelleren Quelle (preise-und-tarife.md) entspricht und somit die Soll-Kernaussage erfüllt.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle genannten Fakten (Preise, Ersparnis, Funktionsumfang, Abschlussweg) sind wörtlich aus dem Hilfeartikel preise-und-tarife.md übernommen, es werden keine zusätzlichen Vermutungen oder Zusagen gemacht.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 4850,
+  "judge_output_tokens": 341,
+  "judge_kosten_usd": 0.01311,
+  "judge_s": 4.087
+}

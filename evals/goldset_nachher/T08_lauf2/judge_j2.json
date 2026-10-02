@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf nennt korrekt, dass das Abo gekündigt ist und Pro bis zum 03.10.2026 weiterläuft, was der Soll-Kernaussage entspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Die Aussage, dass FocusFlow nach Vertragsende 'keinen Zugriff mehr auf deine Kontodaten' habe, ist durch die Trajektorie nicht gedeckt und stellt eine unbelegte Zusatzbehauptung dar.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 2005,
+  "judge_output_tokens": 444,
+  "judge_kosten_usd": 0.00845,
+  "judge_s": 4.667
+}

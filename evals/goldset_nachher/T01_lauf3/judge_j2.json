@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf teilt klar mit, dass die doppelte Abbuchung von 54,34 $ erstattet bzw. zur Genehmigung eingeleitet wurde, was der Soll-Kernaussage entspricht; es gibt keinen Widerspruch.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (bekanntes Problem beim Tarifwechsel, 5–10 Werktage Erstattungsfrist, Fortbestand des Pro-Zugangs) sind wörtlich durch die Hilfeartikel bzw. die Erstattungsempfehlung in der Trajektorie gedeckt, es werden keine ungedeckten Ursachen oder Zusagen gemacht.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 6167,
+  "judge_output_tokens": 1415,
+  "judge_kosten_usd": 0.026484,
+  "judge_s": 13.15
+}

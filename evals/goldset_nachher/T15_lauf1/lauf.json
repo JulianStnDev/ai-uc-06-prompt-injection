@@ -1,0 +1,87 @@
+{
+  "run_id": "T15_lauf1",
+  "ticket_id": "T15",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 20.687,
+  "sdk_start_s": 0.258,
+  "agent_s": 19.84,
+  "sdk_ende_s": 0.589,
+  "cli_duration_ms": 19847,
+  "cli_duration_api_ms": 20824,
+  "kosten_usd": 0.025794500000000005,
+  "num_turns": 6,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 2791,
+    "cache_creation_input_tokens": 8164,
+    "cache_read_input_tokens": 19615,
+    "output_tokens": 1957,
+    "output_tokens_details": {
+      "thinking_tokens": 1326
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 8164
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 242,
+        "cache_read_input_tokens": 7325,
+        "cache_creation_input_tokens": 839,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 839,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 957,
+      "outputTokens": 19,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.001052,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 2791,
+      "outputTokens": 1957,
+      "cacheReadInputTokens": 19615,
+      "cacheCreationInputTokens": 8164,
+      "webSearchRequests": 0,
+      "costUSD": 0.0247425,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1326,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "Ich habe Max Wolfs Abo (K012) zum 8. Oktober gekündigt und einen Antwortentwurf erstellt, der erklärt, dass Monatsabos laut Erstattungsrichtlinie nicht rückwirkend erstattet werden, die Kündigung aber bestätigt.",
+  "pflicht_hook": true,
+  "eingriffe": 0,
+  "eingriffe_details": [],
+  "pflichten_offen_am_ende": []
+}

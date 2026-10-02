@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf nennt korrekt 6,99 USD pro Monat bzw. 59 USD pro Jahr, was exakt der Soll-Kernaussage entspricht und durch den aktuelleren Hilfeartikel (02.07.2026) gedeckt ist.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Die Aussage, dass man die genaue Feature-Liste auch in der App unter Einstellungen > FocusFlow Pro findet, ist nicht durch die Trajektorie belegt – dort wird nur beschrieben, wie man das Abo abschließt, nicht dass dort eine Übersicht der Funktionen angezeigt wird.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 4735,
+  "judge_output_tokens": 1013,
+  "judge_kosten_usd": 0.0196,
+  "judge_s": 9.613
+}

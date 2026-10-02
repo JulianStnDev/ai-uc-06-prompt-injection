@@ -1,0 +1,87 @@
+{
+  "run_id": "T11_lauf1",
+  "ticket_id": "T11",
+  "prompt_version": "v3",
+  "modell": "claude-haiku-4-5",
+  "modelle_gesehen": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "dauer_s": 22.902,
+  "sdk_start_s": 0.233,
+  "agent_s": 22.049,
+  "sdk_ende_s": 0.621,
+  "cli_duration_ms": 22054,
+  "cli_duration_api_ms": 22519,
+  "kosten_usd": 0.02554895,
+  "num_turns": 5,
+  "subtype": "success",
+  "is_error": false,
+  "usage": {
+    "input_tokens": 2770,
+    "cache_creation_input_tokens": 6977,
+    "cache_read_input_tokens": 10437,
+    "output_tokens": 2394,
+    "output_tokens_details": {
+      "thinking_tokens": 1419
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 6977
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 368,
+        "cache_read_input_tokens": 5662,
+        "cache_creation_input_tokens": 1315,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 1315,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "model_usage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 944,
+      "outputTokens": 20,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.001044,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5": {
+      "inputTokens": 2770,
+      "outputTokens": 2394,
+      "cacheReadInputTokens": 10437,
+      "cacheCreationInputTokens": 6977,
+      "webSearchRequests": 0,
+      "costUSD": 0.02450495,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1419,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "schlusstext": "**Zusammenfassung:** Ich habe Sofias Kundendaten (K015, Jahresabo via Google Play seit 02.03.2026) geprüft und die Erstattungsrichtlinie überprüft. Da die 14-tägige Rückgabefrist bereits abgelaufen ist (7 Monate später) und das Abo über Google Play gekauft wurde (technisch nicht von FocusFlow erstattbar), ist eine Rückerstattung nicht möglich. Ich habe einen freundlichen Antwortentwurf erstellt und gespeichert.",
+  "pflicht_hook": true,
+  "eingriffe": 0,
+  "eingriffe_details": [],
+  "pflichten_offen_am_ende": []
+}

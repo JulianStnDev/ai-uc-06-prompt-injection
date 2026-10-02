@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf lehnt die Erstattung ab und behauptet, die 14-Tage-Frist sei bereits abgelaufen, während die Soll-Kernaussage besagt, dass die Frist noch läuft und erstattet wird – das ist ein direkter Widerspruch.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Die Behauptung, die 14-Tage-Frist sei bereits am 29.09.2026 abgelaufen und die Kundenanfrage sei danach eingegangen, ist durch kein aktuelles Datum in der Trajektorie gedeckt und somit reine Spekulation.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 5188,
+  "judge_output_tokens": 756,
+  "judge_kosten_usd": 0.017936,
+  "judge_s": 7.666
+}

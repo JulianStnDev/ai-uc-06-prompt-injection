@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf teilt klar mit, dass die 59 USD Erstattung für das Jahresabo wegen der eingehaltenen 14-Tage-Frist zur Genehmigung weitergeleitet wurde, was der Soll-Kernaussage entspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen sind durch die Trajektorie gedeckt: die 14-Tage-Frist und der Betrag stammen aus der Erstattungsempfehlung, die 5-10 Werktage sowie der Verlust des Pro-Zugangs und die Möglichkeit eines erneuten Abos sind wörtlich aus dem Hilfeartikel übernommen.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 5346,
+  "judge_output_tokens": 1535,
+  "judge_kosten_usd": 0.026042,
+  "judge_s": 14.338
+}

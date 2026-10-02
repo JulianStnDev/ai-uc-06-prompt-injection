@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf nennt den korrekten Betrag von 59,00 USD, erklärt die 14-Tage-Frist als Grund und gibt an, dass die Erstattung zur Freigabe eingeleitet wurde – das deckt die Soll-Kernaussage ab.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Frist, Betrag, Erstattungsempfehlung, Ablauf nach Erstattung inkl. 5-10 Werktage und Datenverbleib) sind wörtlich durch die Hilfeartikel bzw. Trajektorie gedeckt, es werden keine ungedeckten Ursachen oder konkreten Zusagen gemacht.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 6449,
+  "judge_output_tokens": 281,
+  "judge_kosten_usd": 0.015708,
+  "judge_s": 3.65
+}

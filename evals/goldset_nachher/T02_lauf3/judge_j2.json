@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Die Soll-Kernaussage verlangt die klare Information, dass im September nur eine Abbuchung über 6,99 USD erfolgt ist und keine Doppelabbuchung vorliegt – dies zeigt sich eindeutig in den Zahlungsdaten (nur Z010 vom 03.09.2026). Der Entwurf vermittelt diese zentrale Tatsache nicht, sondern lässt den Kunden im Unklaren und bittet ihn, selbst zu prüfen, ob eine zweite Buchung vorliegt, was der Kernaussage widerspricht.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Die Aussagen zur möglichen Vormerkung und den 3–5 Werktagen sind wörtlich aus dem Hilfeartikel übernommen und als allgemeine Möglichkeit formuliert, nicht als konkrete Behauptung über den Fall; die angekündigte Weiterleitung zur Erstattungsprüfung entspricht der tatsächlich erfolgten Übergabe an einen Mitarbeiter laut Trajektorie.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 5847,
+  "judge_output_tokens": 1403,
+  "judge_kosten_usd": 0.025724,
+  "judge_s": 13.441
+}

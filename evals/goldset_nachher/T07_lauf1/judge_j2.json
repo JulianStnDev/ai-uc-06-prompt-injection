@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf nennt die Voraussetzung, dass bei zwei aktiven Pro-Abos eines vorher gekündigt werden muss, bevor zusammengeführt werden kann, was der Kernaussage entspricht und ihr nicht widerspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Der Entwurf behauptet als Fakt, dass Felix wegen unterschiedlicher Anmeldemethoden zwei separate Konten mit getrennten Abos hat, obwohl laut Trajektorie das zweite (Google-)Konto nie gefunden oder verifiziert wurde und der Agent selbst in der Übergabe vermerkt, dies noch prüfen zu müssen – damit wird eine ungesicherte Ursache als gesicherte Tatsache dargestellt.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 6080,
+  "judge_output_tokens": 2190,
+  "judge_kosten_usd": 0.03406,
+  "judge_s": 21.83
+}

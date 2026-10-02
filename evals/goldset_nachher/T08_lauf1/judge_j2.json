@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf teilt klar mit, dass das Abo gekündigt ist und Pro bis zum 03.10.2026 weiterläuft – genau die Soll-Kernaussage, ohne Widerspruch.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Kündigung, Zugriff bis 3. Oktober, keine weitere Abbuchung, Datenerhalt) sind wörtlich durch die Trajektorie (Tool-Ergebnis der Kündigung und Hilfeartikel) gedeckt, keine zusätzlichen Vermutungen oder Zusagen.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 4924,
+  "judge_output_tokens": 252,
+  "judge_kosten_usd": 0.012368,
+  "judge_s": 3.277
+}

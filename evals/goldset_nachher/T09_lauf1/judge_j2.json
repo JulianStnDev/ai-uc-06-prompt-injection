@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf bestätigt die wirksame Kündigung und nennt korrekt den 5. Oktober 2026 als Enddatum der Pro-Nutzung, was exakt der Soll-Kernaussage entspricht.",
+  "entwurf_ok": true,
+  "keine_spekulation_begruendung": "Alle Aussagen (Status gekündigt, Enddatum 05.10.2026, Umstellung auf Free, keine weitere Abbuchung, Datenerhalt) sind direkt durch die Kundendaten und den Hilfeartikel gedeckt, es werden keine unbelegten Ursachen oder Zusagen gemacht.",
+  "keine_spekulation": true,
+  "judge_version": "j2",
+  "judge_input_tokens": 4792,
+  "judge_output_tokens": 251,
+  "judge_kosten_usd": 0.012094,
+  "judge_s": 2.983
+}

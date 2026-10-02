@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Die Trajektorie zeigt in zahlungen_ansehen nur eine einzige Abbuchung für September (Z010, 6,99 USD), es gibt also keine Doppelabbuchung. Der Entwurf vermittelt aber das Gegenteil, indem er unterstellt, es gäbe tatsächlich zwei Buchungen (von denen eine nur eine Vormerkung sein könnte), und klärt den Kunden nicht darüber auf, dass laut Kontodaten nur eine Abbuchung erfolgt ist.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Der Entwurf übernimmt ungeprüft das allgemeine Problemmuster aus dem Hilfeartikel und behauptet implizit, bei Ben lägen zwei Buchungen vor, obwohl die tatsächlichen Zahlungsdaten in der Trajektorie nur eine einzige Buchung für September zeigen – das ist eine nicht gedeckte, der Datenlage widersprechende Spekulation über den Hergang.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 5484,
+  "judge_output_tokens": 1038,
+  "judge_kosten_usd": 0.021348,
+  "judge_s": 10.192
+}

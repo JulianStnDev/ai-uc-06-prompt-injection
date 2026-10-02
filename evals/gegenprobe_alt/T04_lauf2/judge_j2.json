@@ -1,0 +1,11 @@
+{
+  "entwurf_ok_begruendung": "Der Entwurf lehnt die Erstattung ab und behauptet, die 14-Tage-Frist sei bereits abgelaufen – das widerspricht der Soll-Kernaussage, wonach die Frist noch läuft und die Erstattung erfolgen soll.",
+  "entwurf_ok": false,
+  "keine_spekulation_begruendung": "Der Entwurf erfindet eine konkrete Zeitangabe ('bereits 17 Tage zurück'), obwohl in der Trajektorie kein aktuelles Datum vorhanden ist, das diese Berechnung stützen würde – das ist eine nicht gedeckte Behauptung.",
+  "keine_spekulation": false,
+  "judge_version": "j2",
+  "judge_input_tokens": 6767,
+  "judge_output_tokens": 831,
+  "judge_kosten_usd": 0.021844,
+  "judge_s": 8.604
+}
