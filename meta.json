@@ -9,6 +9,6 @@
     "agents",
     "evals"
   ],
-  "summary": "A threat model and attack tests against the live UC7 support agent, showing which guardrail actually stops which attack.",
+  "summary": "A threat model of the UC7 support agent whose gaps are closed in code and proven by deterministic tests, not by the prompt.",
   "metrics": []
 }
