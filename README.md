@@ -51,7 +51,7 @@ Residual risk after the rebuild:
 ## Cost & Latency
 - Cost per 1000 requests: about 28 USD (agent, Haiku 4.5, mean of 45 gold set runs after the rebuild). Total UC6 cost so far: 2.45 USD.
 - p95 latency: 45.0 s per ticket (median 23.5 s), 45 gold set runs, local
-- Quality metric: 0 of 23 attack calls get through; gold set 34 of 45, every lost run attributed individually
+- Quality metric: 0 of 23 attack calls get through; 0 false alarms on 1,241 sentences from correct drafts; gold set 34 of 45, every lost run attributed individually
 
 ## Learnings
 - My picture of UC7 was "the hooks check the sender's account". The code says: the hooks check the tool name and the duties; only the prompt checks the account. A threat model pays off before the first attack, if you write it from the code rather than from memory.

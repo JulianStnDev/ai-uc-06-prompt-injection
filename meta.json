@@ -1,6 +1,6 @@
 {
   "title": "Prompt Injection & Guardrails: Attacking the Support Agent",
-  "status": "active",
+  "status": "done",
   "tags": [
     "prompt-injection",
     "security",
@@ -10,5 +10,8 @@
     "evals"
   ],
   "summary": "A threat model of the UC7 support agent whose gaps are closed in code and proven by deterministic tests, not by the prompt.",
-  "metrics": []
+  "metrics": [
+    "0 of 23 attack calls get through",
+    "0 false alarms on 1,241 sentences from correct drafts"
+  ]
 }
