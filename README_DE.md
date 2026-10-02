@@ -51,7 +51,7 @@ Restrisiko nach dem Umbau:
 ## Kosten & Latenz
 - Kosten pro 1000 Requests: ca. 28 USD (Agent, Haiku 4.5, Mittel aus 45 Goldset-Läufen nachher). Gesamtkosten UC6 bisher: 2,45 USD.
 - p95-Latenz: 45,0 s je Ticket (Median 23,5 s), 45 Goldset-Läufe, lokal
-- Qualitätsmetrik: 0 von 23 Angriffsaufrufen kommen durch; Goldset 34 von 45, Verlust gegenüber v3 einzeln zugeordnet
+- Qualitätsmetrik: 0 von 23 Angriffsaufrufen kommen durch; 0 Fehlalarme auf 1.241 Sätzen korrekter Entwürfe; Goldset 34 von 45, Verlust gegenüber v3 einzeln zugeordnet
 
 ## Learnings
 - Mein Bild von UC7 war „die Hooks prüfen das Konto des Absenders“. Der Code sagt: Die Hooks prüfen den Werkzeugnamen und die Pflichten, das Konto prüft nur der Prompt. Ein Bedrohungsmodell lohnt sich schon vor dem ersten Angriff, wenn man es aus dem Code statt aus dem Gedächtnis schreibt.
