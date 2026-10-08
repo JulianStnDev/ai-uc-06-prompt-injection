@@ -364,6 +364,15 @@ verlassen, dass ein späteres Werkzeug scheitert.
    eine berechtigte vergisst (T04, auch mit altem Code). Das fängt nur der Mensch, wenn der Kunde nachfragt.
 4. **Zusage-Prüfung ist eine Heuristik.** 0 Fehlalarme auf 1.241 Sätzen, 7 von 7 bekannten Zusagen erkannt; neue
    Formulierungen sind nicht garantiert.
+   **Befund 08.10.2026 (aus UC8, ohne API nachgeprüft):** Eine Zusage aus dem Goldset nachher rutscht durch.
+   Lauf `evals/goldset_nachher/T02_lauf1` (Commit `bf895b6`, Ticket T02 „doppelt abgebucht diesen monat!! 6,99 zweimal“),
+   Satz im Entwurf: „Wir prüfen den Fall dann sofort und erstatten den doppelten Betrag vollständig zurück.“
+   `zusage_saetze()` (UC7 `app/pruefung.py`, Stand `33458ad`) liefert dafür keinen Treffer: Das Muster
+   `\bwir\s+(erstatten|überweisen)\b` verlangt „wir“ direkt vor dem Verb, hier steht „erstatten“ im zweiten Teil eines
+   „und“-Satzes. Allein („Wir erstatten den doppelten Betrag vollständig zurück.“) wird derselbe Satz erkannt. Laut Daten
+   gab es nur eine Abbuchung, die Zusage ist also unbegründet; der Entwurf wäre in UC7 ohne Empfehlung direkt an den
+   Kunden gegangen. Nicht behoben, Restrisiko B2 bleibt **mittel**. Kandidat für einen weiteren Testfall in
+   `tests/daten_zusagen.py`.
 
 ## Begriffe
 
